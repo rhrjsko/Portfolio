@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Geon Ko</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oxanium&display=swap">
+
+  <link rel="stylesheet" href="css/boohoo.css">
+</head>
+
+<body>
+  <header>
+    <nav class="nav-bar">
+      <a href="index.html">Home</a>
+      <a href="boohoo.html" class="active">Projects</a>
+      <a href="#process">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="process-header">
+    <h1 class="game-title">Ghost Chaser — Process Analysis</h1>
+    <p class="game-description">A thrilling horror game, intended to scare users
+        with various traps, enemies and stages. Main goal is to avoid all enemies
+        and escape the mansion.
+    </p>
+  </section>
+
+  <section class="process-section">
+    <h2>01 — Concept & Goals</h2>
+    <p>
+      This project began with the idea of using jumpscare and loud noises to create and intense experience. 
+      I wanted players to rely on their flashlight to stun ghosts without getting touched. 
+      My goal was to balance fear, timing, and exploration while keeping gameplay readable and simple.
+    </p>
+
+    <div class="image-grid">
+    <div class="image-container">
+        <img src="img/mansionhall.png" alt="Concept Sketch Placeholder" class="process-img">
+        <p class="caption">* Early sketch of gameplay background.</p>
+    </div>
+    <div class="image-container">
+        <img src="img/jumpscare.png" alt="Concept Sketch Placeholder" class="process-img">
+        <p class="caption">* Early sketch of jumpscare scene.</p>
+    </div>
+    </div>
+  </section>
+
+  <!-- SECTION 2 -->
+  <section class="process-section">
+    <h2>02 — Movement Prototype</h2>
+    <p>Movements were tested out with keyboard controls as well as arrow key.
+        Enemies were made sure to select target from a certain distance and follows
+        the player until they our out of range. 
+    </p>
+
+    <div class="video-container">
+    <video class="process-video" controls muted playsinline>
+        <source src="videos/gameplay.mp4" type="video/mp4">
+    </video>
+    <p class="caption">*Movement test video of player / enemies.</p>
+    </div>
+  </section>
+
+  <section class="process-section">
+    <h2>03 — Enemies + Traps</h2>
+    <p>
+        Zombies and Ghosts follow a strict steer towards target to wonder mechanism.
+        FOV is used to detect players. Arrows fly from top to bottom in random x coordinate.
+        Each type of enemy does significant damage to the player, increasing the level of difficulty.
+
+    </p>
+
+    <div class="enemy-grid">
+        
+        <div class="enemy-container">
+        <img src="img/ghost.png" alt="Ghost enemy" class="process-img">
+        <p class="caption">* Ghost — fast, chase-based enemy.</p>
+        </div>
+
+        <div class="enemy-container">
+        <img src="img/zombie.png" alt="Zombie enemy" class="process-img">
+        <p class="caption">* Zombie — Longer chase-drive, chase-based enemy</p>
+        </div>
+
+        <div class="enemy-container">
+        <img src="img/arrow.png" alt="Arrow trap" class="process-img">
+        <p class="caption">* Arrow Trap — fires every few seconds at random x-axis.</p>
+        </div>
+
+    </div>
+  </section>
+
+<!-- SECTION 4 -->
+<section class="process-section">
+  <h2>04 — Flashlight System + Jumpscare</h2>
+  <p>
+    The flashlight uses a similar FOV type mechanism to create a cone shaped light beam that
+    would stun enemies when shinet at the target. SPACE BAR turns on the flashlight on and off.
+    Turning the flashlight on lowers the battery and shortens duration. 
+  </p>
+
+  <p>
+    Jumpscare is a sudden reaction that swtiches on when user is in contact with the player.
+    A scary image as well as loud screaming noise is intended to frighten user
+  </p>
+
+  <div class="image-grid">
+
+    <div class="image-container">
+      <video class="process-video" controls muted playsinline>
+        <source src="videos/flashlighttest.mp4" type="video/mp4">
+      </video>
+      <p class="caption">* Flashlight cone visibility test.</p>
+    </div>
+
+    <div class="image-container">
+      <video class="process-video" controls muted playsinline>
+        <source src="videos/jumpscaretest.mp4" type="video/mp4">
+      </video>
+      <p class="caption">* Jumpscare & sound test.</p>
+    </div>
+
+  </div>
+
+</section>
+
+  <!-- SECTION 5 -->
+  <section class="process-section">
+    <h2>05 — Reflection</h2>
+    <p>
+      Through this project, I strengthened my understanding of game loops, state machines, 
+      collision detection, and responsive UI design. 
+      I also learned the importance of testing mechanic readability early in development.
+    </p>
+  </section>
+
+  <footer class="footer">
+    <p>© 2025 Geon Ko</p>
+  </footer>
+
+
+
+</body>
+</html>
