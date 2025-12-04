@@ -16,15 +16,15 @@
       <a href="index.html">Home</a>
       <a href="boohoo.html" class="active">Projects</a>
       <a href="#process">About</a>
-      <a href="#contact">Contact</a>
+      <a href="contact.html">Contact</a>
     </nav>
   </header>
 
   <section class="process-header">
-    <h1 class="game-title">Ghost Chaser — Process Analysis</h1>
+    <h1 class="game-title">Boo Hoo — Process Analysis</h1>
     <p class="game-description">A thrilling horror game, intended to scare users
         with various traps, enemies and stages. Main goal is to avoid all enemies
-        and escape the mansion.
+        and escape the mansion.  - made with JAVA and Javascript.
     </p>
   </section>
 
@@ -53,7 +53,8 @@
     <h2>02 — Movement Prototype</h2>
     <p>Movements were tested out with keyboard controls as well as arrow key.
         Enemies were made sure to select target from a certain distance and follows
-        the player until they our out of range. 
+        the player until they our out of range. To acheive this mechanism, FSM system was used to 
+        create a state between wornder - chase - dead. 
     </p>
 
     <div class="video-container">
@@ -86,7 +87,7 @@
         </div>
 
         <div class="enemy-container">
-        <img src="img/arrow.png" alt="Arrow trap" class="process-img">
+        <img src="img/arrow.PNG" alt="Arrow trap" class="process-img">
         <p class="caption">* Arrow Trap — fires every few seconds at random x-axis.</p>
         </div>
 
@@ -94,52 +95,75 @@
   </section>
 
 <!-- SECTION 4 -->
-<section class="process-section">
-  <h2>04 — Flashlight System + Jumpscare</h2>
-  <p>
-    The flashlight uses a similar FOV type mechanism to create a cone shaped light beam that
-    would stun enemies when shinet at the target. SPACE BAR turns on the flashlight on and off.
-    Turning the flashlight on lowers the battery and shortens duration. 
-  </p>
+  <section class="process-section">
+    <h2>04 — Flashlight System + Jumpscare</h2>
+    <p>
+        The flashlight uses a similar FOV type mechanism to create a cone shaped light beam that
+        would stun enemies when shinet at the target. SPACE BAR turns on the flashlight on and off.
+        Turning the flashlight on lowers the battery and shortens duration. 
+    </p>
 
-  <p>
-    Jumpscare is a sudden reaction that swtiches on when user is in contact with the player.
-    A scary image as well as loud screaming noise is intended to frighten user
-  </p>
+    <p>
+        Jumpscare is a sudden reaction that swtiches on when user is in contact with the player.
+        A scary image as well as loud screaming noise is intended to frighten user
+    </p>
 
-  <div class="image-grid">
+    <div class="image-grid">
 
-    <div class="image-container">
-      <video class="process-video" controls muted playsinline>
-        <source src="videos/flashlighttest.mp4" type="video/mp4">
-      </video>
-      <p class="caption">* Flashlight cone visibility test.</p>
+        <div class="image-container">
+        <video class="process-video" controls muted playsinline>
+            <source src="videos/flashlighttest.mp4" type="video/mp4">
+        </video>
+        <p class="caption">* Flashlight cone visibility test.</p>
+        </div>
+
+        <div class="image-container">
+        <video class="process-video" controls muted playsinline>
+            <source src="videos/jumpscaretest.mp4" type="video/mp4">
+        </video>
+        <p class="caption">* Jumpscare & sound test.</p>
+        </div>
+
     </div>
 
-    <div class="image-container">
-      <video class="process-video" controls muted playsinline>
-        <source src="videos/jumpscaretest.mp4" type="video/mp4">
-      </video>
-      <p class="caption">* Jumpscare & sound test.</p>
+  </section>
+
+  <section>
+    <h2> </h2>
+  </section>
+
+  <section class="process-section">
+    <h2>05 — Issues / Solutions</h2>
+    <p>
+      Collision detection was one of the biggest issues as the distance between user, enemy and
+      traps needed to be calculated clearly. Not to mention, the contact between flashlight beam and 
+      enemy had to be exact for a smooth gameplay and animation.
+    </p>
+
+    <p>
+      To fix this issue, I have used images for enemies and set a seperate hit box for 
+      each of the characters. Updating the hitbox every frame for all enemies. By
+      creating a sepereate tight hitbox, it increased collision accuracy significantly.
+    </p>
+
+    <div class="enemy-container">
+     <img src="img/collision.png" alt="Arrow trap" class="process-img">
     </div>
-
-  </div>
-
-</section>
+  </section>
 
   <!-- SECTION 5 -->
   <section class="process-section">
-    <h2>05 — Reflection</h2>
+    <h2>06 — Reflection</h2>
     <p>
       Through this project, I strengthened my understanding of game loops, state machines, 
       collision detection, and responsive UI design. 
       I also learned the importance of testing mechanic readability early in development.
     </p>
+
+
   </section>
 
-  <footer class="footer">
-    <p>© 2025 Geon Ko</p>
-  </footer>
+  
 
 
 
