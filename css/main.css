@@ -161,7 +161,6 @@ body {
 .project-box:hover {
   transform: translateY(-5px);
   border-color: #fb923c;
-  box-shadow: 0 20px 45px rgba(0, 0, 0, 1);
 }
 
 .btn-small {
