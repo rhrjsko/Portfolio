@@ -21,15 +21,10 @@ header,
   margin-inline: auto;
 }
 
-/* NAV ------------------------------------ */
-
 .nav-bar {
   display: flex;
   justify-content: flex-end;
   gap: 0.5rem;
-  padding: 0.4rem 1.2rem 0;
-  background: #0f172a;
-  border-bottom: 1px solid #1f2937;
   font-weight: 500;
   font-family: 'Oxanium', sans-serif;
 }
@@ -50,7 +45,7 @@ header,
 .nav-bar a.active {
   color: #ffffff;
   border-color: #fb923c;
-  background: #fda964;
+  background: #fb923c;
 
 }
 
@@ -60,8 +55,6 @@ header,
   outline: 2px solid #fb923c;
   outline-offset: 2px;
 }
-
-/* HERO / BIO ------------------------------------ */
 
 .bio {
   display: grid;
@@ -75,7 +68,7 @@ header,
 .introduction {
   display: block;
   margin-bottom: 1rem;
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 800;
   font-family: 'Press Start 2P', sans-serif;
   text-transform: uppercase;
@@ -84,15 +77,18 @@ header,
 #description {
   font-size: 0.85rem;
   font-family: 'Oxanium', sans-serif;
-  color: #9ca3af;   /* muted text */
+  color: #9ca3af;
 }
 
-.bio-img {
+.bio-video {
   width: 100%;
-  max-width: 1000px; 
+  max-width: 1000px;
   border: 2px solid #000;
   box-shadow: 6px 6px 0 #000;
   border-radius: 6px;
+  display: block;
+  object-fit: cover;
+  filter: grayscale(40%) contrast(1.1);
 }
 
 .quick-links {
@@ -124,7 +120,7 @@ header,
 .quick-grid a:hover,
 .quick-grid a:focus {
   background: #fb923c;
-  color: #fed7aa;
+  color: #ffffff;
   outline: 2px solid #fb923c;
   outline-offset: 2px;
 }
@@ -276,4 +272,50 @@ header,
   .projects h2 {
     font-size: 1.6rem;
   }
+}
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem 2rem 0.2rem;
+  background: #0f172a;
+  border-bottom: 1px solid #1f2937;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.brand-mark {
+  width: 2.4rem;
+  height: 2.4rem;
+  border: 2px solid #f97316;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Press Start 2P", sans-serif;
+  font-size: 0.7rem;
+  background: #020617;
+  color: #facc6b;
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.brand-name {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+  font-family: 'Oxanium', sans-serif;
+}
+
+.brand-role {
+  font-size: 0.75rem;
+  color: #9ca3af;
+  font-family: 'Oxanium', sans-serif;
+
 }

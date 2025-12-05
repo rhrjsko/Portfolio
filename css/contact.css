@@ -46,7 +46,7 @@ body {
 .nav-bar a.active {
   color: #ffffff;
   border-color: #fb923c;
-  background: #fda964;
+  background: #fb923c;
 }
 
 .nav-bar a:hover,
@@ -72,6 +72,7 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.06em;
   margin-left: 4rem;
+  color:#fb923c
 }
 
 .contact-text {
@@ -92,6 +93,7 @@ body {
   gap: 3rem;
   font-size: 0.9rem;
   margin-left: 3rem;
+  margin-bottom: 3rem;
 }
 
 
@@ -147,6 +149,14 @@ body {
 @media (max-width: 48rem) {
   .contact-info-row {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .contact-heading {
+    font-size: 2rem;
+    align-items: center;
+  }
+  .contact-text {
+    font-size: 0.9rem;;
   }
 }
 

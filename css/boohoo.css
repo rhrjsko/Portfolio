@@ -43,7 +43,7 @@ p {
 .nav-bar a.active {
   color: #ffffff;
   border-color: #fb923c;
-  background: #fda964;
+  background: #fb923c;
 }
 
 .nav-bar a:hover,
