@@ -120,7 +120,7 @@ body {
 }
 
 .contact-link:hover,
-.contact-link:focus-visible {
+.contact-link:focus {
   text-decoration: underline;
   outline: 2px solid #fb923c;
 }

@@ -41,7 +41,7 @@ body {
 }
 
 .nav-bar a:hover,
-.nav-bar a:focus-visible {
+.nav-bar a:focus {
   background: #020617;
   color: #ffffff;
   outline: 2px solid #fb923c;
