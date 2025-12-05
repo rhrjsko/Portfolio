@@ -190,7 +190,8 @@ body {
     align-items: center;
   }
   .contact-text {
-    font-size: 0.9rem;;
+    font-size: 0.7rem;;
+    margin-left: 1rem;
   }
   .site-header {
     flex-direction: column;
@@ -214,9 +215,6 @@ body {
     margin-bottom: 0.3rem;
     border-radius: 4px;
     border: 2px solid #1f2937;
-  }
-  .nav-bar a:last-child {
-    margin-bottom: 0;
   }
 }
 
