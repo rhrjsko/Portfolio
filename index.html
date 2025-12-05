@@ -14,15 +14,15 @@
 
 <body>
   <header class="site-header">
-    <div class="brand">
-      <div class="brand-mark">GK</div>
-      <div class="brand-text">
-        <p class="brand-name">Geon Ko</p>
-        <p class="brand-role">Game Developer / Designer</p>
+    <div class="logo" aria-label="Personal Name Brand Logo">
+      <div class="logo-mark">GK</div>
+      <div class="logo-text">
+        <p class="logo-name">Geon Ko</p>
+        <p class="logo-role">Game Developer / Designer</p>
       </div>
     </div>
       
-    <nav class="nav-bar">
+    <nav class="nav-bar" aria-label="Main naviation">
       <a href="index.html" class="active">Home</a>
       <a href="boohoo.html">Projects</a>
       <a href="about.html">About</a>
@@ -44,10 +44,13 @@
 
       <a href="boohoo.html" class="view-work">View my work</a>
     </div>
-    <video class="bio-video" autoplay muted loop playsinline>
+    <video class="bio-video" autoplay muted loop aria-label="Gameplay background animation">
       <source src="videos/backgroundplay.mp4" type="video/mp4">
     </video>
   </section>
+
+  <!-- I used this source, https://www.w3schools.com/html/html5_video.asp to learn about
+   video element also autoplay muted -->
 
   <section class="quick-links">
     <h2>Shortcuts</h2>

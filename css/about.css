@@ -7,8 +7,10 @@
 body {
   background: #020617;
   color: #f9fafb;
-  font-family: "Oxanium", system-ui, sans-serif;
+  display: flex;
+  flex-direction: column;
   line-height: 1.6;
+  font-family: 'Oxanium', sans-serif;
 }
 
 .site-header {
@@ -20,14 +22,14 @@ body {
   border-bottom: 1px solid #1f2937;
 }
 
-.brand {
+.logo {
   display: flex;
   align-items: center;
   gap: 0.75rem;
   flex-shrink: 0;
 }
 
-.brand-mark {
+.logo-mark {
   width: 2.4rem;
   height: 2.4rem;
   border: 2px solid #f97316;
@@ -40,18 +42,18 @@ body {
   color: #facc6b;
 }
 
-.brand-text {
+.logo-text {
   display: flex;
   flex-direction: column;
 }
 
-.brand-name {
+.logo-name {
   font-size: 1rem;
   font-weight: 600;
   color: #fff;
 }
 
-.brand-role {
+.logo-role {
   font-size: 0.75rem;
   color: #9ca3af;
 }
@@ -92,13 +94,6 @@ body {
 .about-page {
   padding: 3rem 2rem 4rem;
   margin-left: 1rem;
-}
-
-.about-grid {
-  display: grid;
-  grid-template-columns: 1.5fr 1fr;
-  gap: 3rem;
-  margin: 2rem 0 3rem;
 }
 
 .about-title {

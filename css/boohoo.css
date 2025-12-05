@@ -10,9 +10,6 @@ body {
   display: flex;
   flex-direction: column;
   line-height: 1.6;
-}
-
-p {
   font-family: 'Oxanium', sans-serif;
 }
 
@@ -173,13 +170,13 @@ p {
   border-bottom: 1px solid #1f2937;
 }
 
-.brand {
+.logo {
   display: flex;
   align-items: center;
   gap: 0.75rem;
 }
 
-.brand-mark {
+.logo-mark {
   width: 2.4rem;
   height: 2.4rem;
   border: 2px solid #f97316;
@@ -192,19 +189,19 @@ p {
   color: #facc6b;
 }
 
-.brand-text {
+.logo-text {
   display: flex;
   flex-direction: column;
 }
 
-.brand-name {
+.logo-name {
   font-size: 1rem;
   font-weight: 600;
   color: #ffffff;
   font-family: 'Oxanium', sans-serif;
 }
 
-.brand-role {
+.logo-role {
   font-size: 0.75rem;
   color: #9ca3af;
   font-family: 'Oxanium', sans-serif;

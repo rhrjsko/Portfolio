@@ -12,15 +12,15 @@
 
 <body>
   <header class="site-header">
-    <div class="brand">
-      <div class="brand-mark">GK</div>
-      <div class="brand-text">
-        <p class="brand-name">Geon Ko</p>
-        <p class="brand-role">Game Developer / Designer</p>
+    <div class="logo" aria-label="Personal Name Brand Logo">
+      <div class="logo-mark">GK</div>
+      <div class="logo-text">
+        <p class="logo-name">Geon Ko</p>
+        <p class="logo-role">Game Developer / Designer</p>
       </div>
     </div>
 
-    <nav class="nav-bar">
+    <nav class="nav-bar" aria-label="Main naviation">
       <a href="index.html" >Home</a>
       <a href="boohoo.html" class="active">Projects</a>
       <a href="about.html">About</a>
@@ -46,11 +46,11 @@
 
     <div class="image-grid">
     <div class="image-container">
-        <img src="img/mansionhall.png" alt="Concept Sketch Placeholder" class="process-img">
+        <img src="img/mansionhall.png" alt="background concept of inside gameplay" width="400" height="300" class="process-img">
         <p class="caption">* Early sketch of gameplay background.</p>
     </div>
     <div class="image-container">
-        <img src="img/jumpscare.png" alt="Concept Sketch Placeholder" class="process-img">
+        <img src="img/jumpscare.png" alt="Early sketch of grey figure with scary teeth, bleeding out of its mouth and screen covered with blood." width="400" height="300" class="process-img">
         <p class="caption">* Early sketch of jumpscare scene.</p>
     </div>
     </div>
@@ -65,7 +65,7 @@
     </p>
 
     <div class="video-container">
-    <video class="process-video" controls muted playsinline>
+    <video class="process-video" controls muted aria-label="Gameplay movement between player and enemies animation">
         <source src="videos/gameplay.mp4" type="video/mp4">
     </video>
     <p class="caption">*Movement test video of player / enemies.</p>
@@ -83,17 +83,17 @@
 
     <div class="enemy-grid">
       <div class="enemy-container">
-        <img src="img/ghost.png" alt="Ghost enemy" class="process-img">
+        <img src="img/ghost.png" alt="Early sketch of a pixelated white ghost with black eyes" width="300" height="300" class="process-img">
         <p class="caption">* Ghost — fast, chase-based enemy.</p>
       </div>
 
       <div class="enemy-container">
-        <img src="img/zombie.png" alt="Zombie enemy" class="process-img">
+        <img src="img/zombie.png" alt="Early sketch of green zombie with its brain and ribs poking out" width="300" height="300" class="process-img">
         <p class="caption">* Zombie — Longer chase-drive, chase-based enemy</p>
       </div>
 
       <div class="enemy-container">
-        <img src="img/arrow.PNG" alt="Arrow trap" class="process-img">
+        <img src="img/arrow.PNG" alt="Early sketch of pixelated arrow pointing down" width="300" height="300" class="process-img">
         <p class="caption">* Arrow Trap — fires every few seconds at random x-axis.</p>
       </div>
     </div>
@@ -112,14 +112,14 @@
     </p>
     <div class="image-grid">
       <div class="image-container">
-        <video class="process-video" controls muted playsinline>
+        <video class="process-video" controls muted aria-label="Gameplay of flashlight length test and battery reducing as flashlight is turned on animation">
         <source src="videos/flashlighttest.mp4" type="video/mp4">
         </video>
         <p class="caption">* Flashlight cone visibility test.</p>
       </div>
 
       <div class="image-container">
-        <video class="process-video" controls muted playsinline>
+        <video class="process-video" controls muted aria-label="Gameplay of when players dies and jumpscare of scary image triggers.">
         <source src="videos/jumpscaretest.mp4" type="video/mp4">
         </video>
         <p class="caption">* Jumpscare & sound test.</p>
@@ -142,7 +142,8 @@
     </p>
 
     <div class="enemy-container">
-     <img src="img/collision.png" alt="Arrow trap" class="process-img">
+     <img src="img/collision.png" alt="Image of Player, Ghost and Battery pick up item, each
+     player and ghost with red collision outlined box and item with green outlined box" width="400" height="200" class="process-img">
     </div>
   </section>
 
