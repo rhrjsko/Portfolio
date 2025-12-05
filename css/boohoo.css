@@ -20,9 +20,6 @@ p {
   display: flex;
   justify-content: flex-end;
   gap: 0.5rem;
-  padding: 0.4rem 1.2rem 0;
-  background: #0f172a;
-  border-bottom: 1px solid #1f2937;
   font-weight: 500;
   font-family: 'Oxanium', sans-serif;
 }
@@ -168,6 +165,51 @@ p {
   text-align: left;
 }
 
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem 2rem 0.2rem;
+  background: #0f172a;
+  border-bottom: 1px solid #1f2937;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.brand-mark {
+  width: 2.4rem;
+  height: 2.4rem;
+  border: 2px solid #f97316;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Press Start 2P", sans-serif;
+  font-size: 0.7rem;
+  background: #020617;
+  color: #facc6b;
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.brand-name {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+  font-family: 'Oxanium', sans-serif;
+}
+
+.brand-role {
+  font-size: 0.75rem;
+  color: #9ca3af;
+  font-family: 'Oxanium', sans-serif;
+}
+
 @media (max-width: 60rem) {
   .process-section {
     padding: 2rem 2rem;
@@ -179,24 +221,30 @@ p {
 }
 
 @media (max-width: 48rem) {
-  .process-section {
-    padding: 2rem 1.5rem;
+  .site-header {
+    flex-direction: column;
+    padding: 0.75rem 1rem;
   }
-
-  .image-grid {
-    grid-template-columns: 1fr; 
+  .nav-bar {
+    width: 100%;
+    display: block;
+    padding: 0.5rem 0;
+    background: #020617;
+    border-top: 1px solid #1f2937;
+    margin-top: 0.75rem;
   }
-
-  .enemy-grid {
-    grid-template-columns: repeat(2, 1fr);
+  .nav-bar a {
+    display: block;
+    width: 100%;  
+    text-align: center;
+    font-size: 0.85rem;
+    padding: 0.5rem;
+    margin-bottom: 0.3rem;
+    border-radius: 4px;
+    border: 2px solid #1f2937;
   }
-
-  .game-title {
-    font-size: 1.2rem;
-  }
-
-  .game-description {
-    padding: 0 1.5rem;
+  .nav-bar a:last-child {
+    margin-bottom: 0;
   }
 }
 
